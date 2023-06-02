@@ -27,6 +27,8 @@ cat("P-value : ", hasil$p.value, "\n")
 
 
 # No 3
+library(mosaic)
+
 n1 <- 20
 x1 <- 3.64
 s1 <- 1.67
@@ -39,7 +41,7 @@ hasil <- tsum.test(x1, s1, n1, x2, s2, n2, var.equal = TRUE)
 print(hasil)
 
 # 3c
-cat("Statistik : ", hasil$statistic, "\n")
+plotDist(dist = 't', df = 2)
 
 # 3d
 kiri_crit <- qt(p = 0.025, df = 2)
@@ -75,8 +77,7 @@ sum_hasil = summary(hasil)
 print(sum_hasil)
 
 # 4c
-summary_table <- data %>%
-  group_by(tipe, temp) %>%
+summary_table <- data %>% group_by(tipe, temp) %>% 
   summarize(
     mean = mean(cahaya),
     sd = sd(cahaya)
