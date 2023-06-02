@@ -161,4 +161,5 @@ Cahaya ~ tipe + temp + tipe:temp berarti akan menguji apakah terdapat perbedaan 
 ![4c](./image/4c.jpeg)
 
 ## Foto & Output
-![4](./image/4_foto.jpeg)
+![4.1](./image/4_foto_1.jpeg)
+![4.2](./image/4_foto_2.jpeg)
